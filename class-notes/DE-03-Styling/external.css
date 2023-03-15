@@ -1,0 +1,35 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+p{
+    color: rgb(32, 108, 82);
+}
+#par{
+    color: rgb(130, 109, 82);
+}
+
+.center p span{
+    background-color: crimson;
+}
+
+/* ******************* */
+
+.center p{
+    color: darkorange;
+}
+/* ustteki yazim center cocuk ve torunu olan pleri etkiler */
+.center > p{
+    background-color: darkslategrey;
+}
+/* ustteki yazim sadece cocugu olan p leri etkiler */
+
+.secici ~ a{
+    background-color: indianred;
+}
+/* ustteki yazim secici divindek sonraki tüm a lari alir */
+.secici + a {
+    background-color: lightblue;
+}
+/* sadece ilk a yi alir */

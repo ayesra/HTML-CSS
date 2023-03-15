@@ -12,7 +12,7 @@
 
 <form action="result.html"
 
-<!--! TEXT -->
+   <!--! TEXT  -->
 <div>
     <label for="ad">AD:</label>
 
@@ -88,9 +88,116 @@ checked=sayfayi actiginda bi tanesi tikli gelsin diye eklenir -->
 </div>
 
 <br>
+<div>
+<!--! NUMBER -->
+<label for="age">YAS</label>
+<input type="number" name="yas" id="age" value="0" max="100" step="2">
+<!-- max=gidebilecegi sayi,
+step=kacar kacar artacagi -->
+</div>
+<br>
 
 <div>
-    <input type="submit" value="GÖNDER">
+    <label for="color">RENK</label>
+    <input id="color" type="color" name="renk">
+</div>
+<br>
+
+<!--! DATE -->
+<div>
+    <label for="tarih">TARIH</label>
+    <input 
+    id="tarih" 
+    type="date" 
+    min="2000-10-01" 
+    max="2023-10-01" 
+    name="tarih">
+    <!-- yil-ay-gün seklinde yazilir -->
+</div>
+<br>
+
+<!--! DATE SAATLI OLAN -->
+<div>
+    <label for="tarih2">TARIH</label>
+    <input 
+    id="tarih2" 
+    type="datetime-local" 
+    min="2000-10-01" 
+    max="2023-10-01"
+    name="tarih2">
+    
+</div>
+<br>
+
+<!--! EMAIL -->
+<div>
+    <label for="">EMAIL</label>
+    <input 
+    type="email" 
+    name="email" 
+    placeholder="example@gmail.com">
+</div>
+<br>
+
+<!--! TEL -->
+<div>
+    <label for="">TELEFON</label>
+    <input type="tel" 
+    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+    placeholder="+555-555-55-55"/>
+</div>
+<br>
+<!--! SELECT-OPTIONGROUP -->
+<div>
+    <label for="tatli">Hangi tatliyi seversiniz?</label>
+    <select name="tatli" id="tatli">
+        <optgroup label="Serbetli Tatlilar">
+            <option value="künefe">Künefe</option>
+            <option value="baklava">Baklava</option>
+            <option value="sarma">Sarma</option>
+            <option value="kadayif">Kadayif</option>
+        </optgroup>
+       <!-- secmeli seceneklerde value nun doldurulmasi gerekir, formun kendi yazdigimiz kisimlarinda sart degil  -->
+        <optgroup label="Sütlü Tatlilar">
+            <option value="muhallebi">Muhallebi</option>
+            <option value="kazandibi">Kazandibi</option>
+           </optgroup>  
+    </select> 
+</div>  
+<br>
+
+<!--* DATALIST -->
+
+<div>
+    <label for="marka">Sevdiginiz Marka</label>
+    <input id="marka" list="markalar">
+
+    <datalist id="markalar">
+        <option value="Vakko"></option>
+        <option value="Beymen"></option>
+        <option value="Guess"></option>
+        <option value="Lacoste"></option>
+    </datalist>
+</div>
+
+ <!--! datalist vs select ==>bir gereklilik ile bir öneri arasındaki fark olarak düşünün.  select, kullanıcının vermiş olduğunuz seçeneklerden birini seçmesi gerekir.  datalist, kullanıcının verdiğiniz seçeneklerden birini seçmesi önerilir, ancak aslında girdiye istediği her şeyi girebilir. -->
+
+ <!--! input list ile datalist in id si aynı olmalı ki liste çıksın -->
+<br>
+<!--! TEXTAREA -->
+
+<div>
+    <label for="yorum">Yorumlarinizi giriniz</label>
+    <textarea name="yorum" id="yorum" cols="20" rows="4" style="resize:none" maxlength="80"></textarea>
+</div>
+
+<br>
+
+<br>
+<div>
+    <input type="submit" value="Gönder">
+    <input type="reset">
+    <input type="button" value="Kaydet">
 </div>
 
 </form>
