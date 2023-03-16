@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    font-family: 'Dancing Script', cursive;
+}
+
+li{
+    background-color: lightsteelblue;
+}
+/* li lere verilen color lardan a etkilenmez, a ya ayri yazilmasi lazim */
+ul{
+    list-style-position: inside;
+    list-style-type: "💻";
+}
+
+.aktif{
+    background-color: limegreen;
+
+}
+
+a{
+    color: rgb(91, 74, 192);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.aktif:hover{
+    background-color: pink;
+}
+
+/* lilerin üzerine maus ile gelindiginde */
+li:hover{
+
+    background-color: navajowhite;
+    font-size: 30px;
+
+}
+
+a:hover{
+    color: orange;
+}
