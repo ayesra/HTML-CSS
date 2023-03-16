@@ -1,0 +1,22 @@
+
+@import url(https://fonts.googleapis.com/css?family=Rubik+Burned:regular);
+
+.birinci{
+    font-family: 'Climate Crisis', cursive;
+    background-color: darkolivegreen;
+   
+}
+.menü{
+    font-size:  30px;
+    text-align: center;
+    width: 250px;
+}
+.aktif{
+    background-color: rgb(106, 161, 106);
+    font-family: "rubik burned";
+}   
+
+
+div{
+    background-color: indianred;
+}
