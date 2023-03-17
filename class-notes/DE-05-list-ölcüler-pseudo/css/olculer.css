@@ -1,0 +1,56 @@
+/* *{
+    margin: 0;
+} */
+
+
+.dede{
+    background-color: salmon;
+    width: 50%; 
+    /* 450x e denk geliyor */
+}
+.baba{
+    background-color: seagreen;
+    width: 50%;
+    /* dedenin altinda oldugu icin dedenin alaninin %50sini alir */
+
+}
+.torun{
+    background-color: thistle;
+    width: 50vw;
+    /* 500px e denk geliyor */
+}
+
+/* viewport ölculeri tüm ekrani baz alir, mesela 50vw dersek tüm 1400px lik pc ekranimi baz alir,
+%50 ise body nin 16px lik default margin lerinden arta kalan kismin %50 sini alir.
+Bu yüzden % ler parent i önemser, her zaman rarent ten gelen ölcünun yuzdesini alir ama viewportlar her durumda ekranin yzdesini alir */
+
+.tek{
+    font-size: 0.5em;
+}
+
+.anane{
+    color: tomato;
+    font-size: 3em;
+    /* 3*16=48px */
+    /* em ata yi onemser */
+}
+.anne{
+    font-size: 0.5em;
+    /* 48/2=24px */
+}
+.cocuk{
+    font-size: 3em;
+}
+/** herkes hiyerarsik düzende bir üstündekini baz alir */
+/*! rem icin parent child yok ana elemente göre default 16px alir, 1rem=16px */
+
+.div1{
+    font-size: 2rem;
+
+}
+
+.div2{
+    font-size: 2rem;
+}
+/*! div babayi takmaz sabittir 1=16 */
+/*! sadece en büyük atayi (body) takar, yani body de ölcu degisikligi olursa o zaman paralel olarak degisir !!! "1 rem = body nin pikseli"!!!*/
