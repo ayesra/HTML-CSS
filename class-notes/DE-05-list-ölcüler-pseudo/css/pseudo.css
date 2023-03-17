@@ -1,0 +1,101 @@
+table{
+
+    width: 100%;
+    height: 300px;
+    font-size: 30px;
+
+}
+
+tr:nth-child(odd){
+    background-color: coral;
+    color: darkolivegreen;
+}
+
+tr:nth-child(3){
+    background-color: rgb(206, 157, 51);
+}
+
+td:first-child{
+    color: firebrick;
+    /* No sütunu */
+    font-weight: 900;
+}
+
+td:last-child{
+    font-style: italic;
+    font-size: 50px;
+}
+
+tr::before, tr::after{
+
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  /* content: "\1F604"; */
+  content: "😄";
+  color: rgb(33, 160, 174);
+  font-size: 40px;
+
+  /* font-family ve font-weight her zaman bu sekilde yazilmak zorunda */
+  /* contente ister kod (sitesine gidip css icin uygun olan kodu al)yaz,ister direk yapistir! kodla yazarken renge falan daha rahat müdahale edilir!
+  !bazi emojiler müdahale kabul etmez, degismez */
+}
+
+
+tr:nth-child(3)::after,tr:nth-child(3)::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    /* content: "\1F604"; */
+    content: "💙";
+    color: rgb(161, 60, 165);
+}
+
+td:hover{
+    background-color: grey;
+    color: indigo;
+}
+
+tr:hover{
+    background-color: lightpink;
+    color: mediumslateblue;
+}
+
+/* (td)data ya özel verilen her özellik baskin kalir dolayisiyla (td:hover)row hover la degistirilemez, ezilemez..tr lere verilenler degistirilebilir */
+/* bu yüzden No sütununun rengi kirmizi olarak kaldi */
+
+
+
+button{
+    cursor:pointer;
+}
+
+.fa-solid{
+    font-size: 40px;
+}
+
+.icon{
+    color: rgb(102, 151, 17);
+}
+
+a{
+    color: seagreen;
+}
+
+a:visited{
+    color: slateblue;
+    /* ziyaret edilen site nin rengi degismis grülecek */
+    /* arama gecmisi temizlenirsen o zaman rengi önceki haline geri doner */
+}
+
+a:active{
+    color: royalblue;
+    /* maus da tusa bastigimizda rengi degisir */
+}
+
+
+a:hover{
+    font-size: 30px;
+    background-color: salmon;
+    /* maus la üzerine geldigimizde olusan degisiklikler */
+}
+
+/* hover özelligi herseyde kullanilirken, aktive ve visited özellikleri sadece internet sayfalari icin kullanilan özelliklerdir */
