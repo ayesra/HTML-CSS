@@ -1,0 +1,50 @@
+/* *{
+    margin: 0;
+} */
+
+.btn{
+    background-color: bisque;
+margin-top: 1rem;
+margin-right: 2rem;
+margin-bottom: 3rem;
+margin-left: 4rem;
+/* en alta yazilan margin degerini baz alir */
+margin: 2rem;
+/* üsttekileri ezdi,her yerden 2rem verdik */
+margin: 1rem 2rem 3rem 4rem;
+/* en üstteki dörtlü bu sekilde tek satirda verilir. */
+/* yukari-sag-asagi-sol */
+margin: 3rem 2rem;
+/* alt,üst-sag,sol yaaani 3 2 3 2 yapar */
+margin: 1rem 2rem 3rem;
+/* üst-sag,sol-alt yaani 1 2 3 2 */
+padding: 1rem;
+/* margin de ki kurallarin aynisi gecerli */
+padding-left: 3rem;
+/* su an sadece soldan 1 i ezdik diger taraflar halen 1  */
+}
+.span-btn{
+    background-color: burlywood; 
+/* inline elementlere width-height verilemez */
+/* img ler(resimler) istisna!! */
+/* margin de sag-sol isler ama alt-üst kabul etmez */
+margin-top: 1rem;
+margin-right: 2rem;
+margin-left: 2rem;
+margin-bottom: 3rem;
+
+/* padding: 2rem; */
+/* inline elementlere padding verdigimizde 4taraftan da alir, fakat komsularini(diger türleri) itemedigi icin alanlarina müdahale eder o yüzden kullanmak saglii degildir */
+padding-right: 5rem;
+padding-left: 1rem;
+/* kendi türünden olanlari itebilir */
+}
+.new-btn{
+    background-color: coral;
+    width: 20vw;
+    height: 20vh;
+    margin: 2rem auto;
+    /* auto sag0dan-soldan otomatik esit alan ayarlar  */
+    /* sayfada ortalamak icin kullanilir */
+
+}

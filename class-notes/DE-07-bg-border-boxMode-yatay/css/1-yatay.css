@@ -1,0 +1,58 @@
+/*! YATAY-MENU */
+
+.yatay-menu ul{
+    list-style-type: none;
+}
+.yatay-menu ul li{
+    background-color: peachpuff;
+    width: 8rem;
+    height: 5rem;
+    margin: 0.5rem;
+    display: inline-block;
+    text-align: center;
+
+    /** li block olduğu için normalde alt altalar. yanyana dizilsin ama width height margin almaya da devam etsin istiyorsak display:inline-block; */
+}
+/* li ler normalde alt alta gelir,biz yan yana gelmesini sagladik ve width height veilmesini sagladik */
+/* display:inline-block yaparak hem width almasini hem de padding almasini saglamis oluyoruz */
+/* artik block element oldu */
+a{
+    text-decoration: none;
+    /* yazi altindaki cizgiyi kaldirdik */
+    background-color: rgb(172, 102, 172);
+    display: inline-block;
+    padding: 1rem;
+    width: 6rem;
+
+    /** sağ sol 1 padding ve 6rem width ile parent ı gibi 8rem eder */
+}
+ /* block elementler text-align:center ile ortalanmaz.. inline da kullanilir */
+
+ a:hover{
+    background-color: skyblue;
+ }
+
+ a:active{
+    color: snow;
+ }
+
+ /*! ACILIR MENU */
+
+ .ul1{
+    background-color: tan;
+    display: none;
+    /** display none ile menu nun (h3) altindaki ul leri gizledik */
+
+ }
+ .acilir-menu:hover .ul1{
+    display:block
+    /** block ile gizledigimizin tekrar ortaya cikmasini saglariz */
+    /** gizledigimiz icin direk sadece ul yazamiyoruz, menu yü belirtmemiz gerekiyor */
+ }
+
+ .acilir-menu:hover{
+    background-color: teal;
+    /** menu nün üzerine gelince degisiklik olsun */
+ }
+
+ 
