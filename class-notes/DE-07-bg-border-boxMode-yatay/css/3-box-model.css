@@ -1,0 +1,49 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+.olcusuz-box{
+    background-color: sandybrown;
+    border: 15px solid rgb(160, 125, 79);
+    padding: 50px;
+    margin: 20px 85px;
+    font-size: 2rem;
+}
+
+.olcusuz-content{
+    background-color: gold;
+    border: 15px solid slategrey;
+    padding: 50px;
+    margin: 20px 85px;
+    font-size: 2rem;
+}
+
+/* box-sizing komutu alttaki gibi width height verirsek işlevselleşir */
+
+.box{
+    background-color: yellowgreen;
+    border: 15px solid rgb(203, 170, 130);
+    padding: 50px;
+    margin: 20px 85px;
+    font-size: 2rem;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.content{
+    background-color: yellowgreen;
+    border: 15px solid rgb(203, 170, 130);
+    padding: 50px;
+    margin: 20px 85px;
+    font-size: 2rem;
+    width: 300px;
+    height: 300px; 
+
+    /* width verirsek default ta nasil davraniyorsa alttaki kod da aynidir */
+
+}
+

@@ -1,0 +1,97 @@
+
+.container{
+    margin: 1rem;
+}
+
+
+.msg{
+    display: inline-block;
+    margin: 1rem;
+    /* inline i block yapariz ki margin islesin yoksa inline lara etki etmiyor */
+}
+
+.msg1{
+    border: 3px solid red;
+}
+
+.msg2{
+    border: 3px dashed blue;
+}
+
+.msg3{
+    border-right: 3px dotted orange;
+    border-left: 3px solid olive;
+}
+
+.msg4{
+    border: 9px outset orange;
+}
+
+.msg5{
+    border: 9px inset purple;
+    padding: 1rem;
+    background-color: rgb(149, 169, 189);
+    border-radius: 5px;
+    border-radius: 5px 0;
+    /* b-radius kenarlari yuvarlaklastirmak icin kul. */
+}
+
+.msg6{
+    border: 15px groove steelblue;
+    background-color: rgba(228, 153, 54, 0.922);
+
+    outline: 15px groove rgb(213, 186, 128);
+    outline-offset: 20px;
+    /* outline bir cerceve daha cizer offset le aralarindaki mesafe ayarlanabilir. */
+    /* border gibi büyüdükce komsusunu itmez üstlerine cikar */
+}
+
+.msg7{
+    border: 15px ridge salmon;
+    border-radius: 30%;
+}
+
+.msg8{
+    border: 3px solid lightcoral;
+    background-color: lightgoldenrodyellow;
+
+    /* *border-radius: 50%; */
+    /* bu sekilde elips olur */
+    /*! yuvarlak vermek icin asagidaki kullanilir */
+   width: 3.5rem;
+   height: 3.5rem;
+   padding: 2rem;
+   border-radius: 50%;
+}
+
+/* dotted- Noktalı bir kenarlık tanımlar
+dashed- Kesikli bir kenarlık tanımlar
+solid- Tek, düz, düz bir çizgi görüntüler.
+double- Çift kenarlık tanımlar
+groove- Oyulmuş bir görünüme sahip bir kenarlık görüntüler. ridge nin tam tersidir
+ridge- Dışa itilmiş görünüme sahip bir kenarlık görüntüler
+inset- Öğenin gömülü görünmesini sağlayan bir kenarlık görüntüler.outset in tam tersidir 
+outset- Öğenin kabartmalı görünmesini sağlayan bir kenarlık görüntüler.
+none- Sınır tanımlamaz
+hidden- Gizli bir sınır tanımlar */
+
+.seffaf{
+
+    background-image: url("../img/monalisa.jpeg");
+
+    border: 7px solid rgba(180, 101, 101, 0.452);
+    outline: 20px solid rgba(87, 16, 87, 0.763);
+
+    /** border i seffaflastirdikca resim arkadan görünür ama outline da görünmez,
+    sadece üstteki ögelerin (arka plandaki)görünmesini saglar */
+    /** sayfanin arka planindaki resmin gözükmesi icin outline kullanilir(seffaflastirarak) */
+}
+
+/*! border outline farkları */
+/* 1)border, border-radius özelliği ile yuvarlatılmış köşeleri destekler  outline yapmaz. */
+/* 2)border la istersek Yalnızca bir tarafı şekillendirme vardır, outline da yok */
+/* 3)outline,  -offset özelliğiyle offset'i (border ve outline arası boşluk) destekler  */
+/* 4)border, kutu modelinin bir parçasıdır, bu nedenle öğenin boyutuna göre sayılır, büyüdükçe komşusunu iter. outline, kutu modelinin bir parçası olmadığı için yakındaki öğeleri etkilemez, üstüne çıkar. öğenin border ının dışına çizilir ve diğer içerikle örtüşebilir.*/
+
+/*outline ın pratik kullanımı şeffaflıkla ilgilidir. Arka planı olan bir üst öğeniz (mesela body ye bir image verdiysek) varsa,ve bu resim border dan bile görünsün istiyorsak (border ının saydam olmasını istiyorsanız), "border" yerine "outline" kullanmalısınız. Bir border şeffaf olabilse de, ebeveynin değil çocuğun (seffaf taki monalisa yı) arka planını gösterir */
+

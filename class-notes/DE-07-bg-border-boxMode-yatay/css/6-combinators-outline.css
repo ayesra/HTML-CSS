@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** Descendent Selector*/
+/*! kutu class'ı icerisinde tüm p'leri sec */
+
+.kutu p{
+    color: chocolate;
+}
+
+/** Child Selector */
+/*! parent'i (p nin anası kutu olmalı, torun p olmasın,300tl yi almadı) kutu class olan tüm p'leri seç */
+
+.kutu > p{
+    color: cornflowerblue;
+}
+
+/*! h1 elementi kapandiktan sonraki ilk p elementi secer ama üstteki gibi bir stil varsa (.kutu varsa) alttaki selector ile bunu ezmek istersem bunlara da ".kutu" eklemeliyim  */
+/** Adjacent Sibling */
+
+h1 + p {
+    color: darkgreen;
+}
+
+
+ /*! h1 elementinden sonraki tüm p elementlerini secer ama üstteki gibi bir stil varsa (.kutu varsa) alttaki selector ile bunu ezmek istersem bunlara da ".kutu" eklemeliyim */
+ /** general sibling selector */
+
+h1 ~ p {
+    color: darkseagreen;
+}
+
+h3{
+    margin: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid rosybrown;
+    border-radius: 50%;
+    outline: 3px solid brown;
+    outline-offset: 1rem;
+}
+/* outline, öğenin border ının dışındaki bir çizgidir . */
+
+ /* outline-offset=outline ile bir öğenin kenarı veya kenarlığı  arasındaki boşluk miktarını ayarlar . */

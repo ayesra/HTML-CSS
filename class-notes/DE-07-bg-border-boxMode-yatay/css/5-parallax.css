@@ -1,0 +1,15 @@
+.bg{
+    height: 47vh;
+
+    background-size: cover;
+    background-attachment: fixed;
+    /** parallax efektini üstteki kod verir, background image ile resim verilmesi gerekir */
+    /* ustte yaptigimiz resimleri sabitler sadece yazilar kayar */
+}
+
+.div1{
+    background-image: url("../img/monalisa.jpeg");
+}
+.div2{
+    background-image: url("https://cdn.pixabay.com/photo/2022/07/15/20/13/strawberries-7323943__480.jpg");
+}
