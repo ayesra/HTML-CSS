@@ -1,0 +1,26 @@
+.box{
+    border: 2px solid royalblue;
+    width: 20rem;
+    height: 6rem;
+    margin-bottom: 5rem;
+}
+
+.box1{
+    overflow: visible;
+    /** default overflow degeridir yani oldugu gibi birakir tasmaya devam eder */
+}
+
+.box2{
+    overflow: hidden;
+    /** tasanlari saklar yani sadece sigan yazi kalir */
+}
+
+.box3{
+    overflow: scroll;
+    /** tasan kismi da kaydirip okuyabilmek icin scrol yerlestirir */
+}
+
+.box4{
+    overflow: auto;
+    /** metni otomatik olarak ayarlar genellikle scrol yerlestirir */
+}

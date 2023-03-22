@@ -1,0 +1,15 @@
+.fixed{
+    background-color: tomato;
+    padding: 10px;
+    position: fixed;
+    left: 20px;
+    top: 120px;
+    /** fixed ile sayfaya sabitledik yani bir katman öne cektik, dolayisiyla yazilar ve görseller arka katmanda kaymaya devam ediyor  */
+}
+
+.sticky{
+    background-color: turquoise;
+    padding: 10xp;
+    position: sticky;
+    top: 20px;
+}
