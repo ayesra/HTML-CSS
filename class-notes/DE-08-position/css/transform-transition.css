@@ -22,17 +22,31 @@
 
 .yazi4{
     background-color: indianred;
-    transform: scaleX(2);
-    transform:scaleY(2);
-    transform: scale(0.5,2)
+    
 }
 
+/************ SCALE *******/
+ .yazi4:active{
+ transform:scaleX(2);
+ transform:scaleY(2);
+ transform: scale(0.5, 2)
+ }
+
+ .yazi5:hover{
+    transform: scaleY(0.5);
+ }
 
 .box{
     background-color: crimson;
     width: 100px;
     font-weight: 800;
     height: 50px;
+    margin: 50px;
+    padding: 10px;
+    
+    /******* TRANSITION ********/
+    
+    transition: transform 4s;
 }
 
 .x:hover{
@@ -48,7 +62,7 @@
 }
 
 
-/* .btn-div{
+ .btn-div{
     text-align: center;
 }
 
@@ -58,4 +72,16 @@
     padding:20px;
     font-size: 1.3rem;
     border-radius: 5px;
-} */
+} 
+
+.btn:hover{
+    background-color: burlywood;
+    color: white;
+    font-size: 5rem;
+    /*** transition ***/
+    transition:background-color 1s, color 5s, font-size 4s; 
+    transition: background-color 1s, color 5s, font-size 4s ease-in 1s; 
+
+    transition:all 4s ease-in 1s;
+    /* 1sn bekle sonra yavaşça 4sn de font-size değişsin  */
+}
