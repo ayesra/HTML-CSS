@@ -1,0 +1,72 @@
+p{
+    height: 10vh;
+}
+
+.header1{
+    background-image: linear-gradient(yellow,green);
+}
+
+.header2{
+    background-image: linear-gradient(rgb(229, 229, 71),rgb(90, 150, 90),rgb(107, 44, 107));
+}
+
+.header3{
+    background-image: linear-gradient(
+        to right,
+        rgb(228, 228, 84), 
+        green, 
+        purple);
+    /** to-right soldan saga renk gecisi yapar */
+}
+
+.header4{
+    background-image: linear-gradient(
+        60deg, 
+        yellow,
+        green, 
+        blue);
+}
+
+.header5{
+    background-image: linear-gradient(
+        rgb(231, 231, 33) 20%,
+        rgb(20, 95, 20),
+        rgb(100, 28, 100) 50%
+    );
+}
+
+/** linear-gradient:yukarıdan aşağı, radial-gradient :circle */
+.header6{
+    background-image: radial-gradient(
+        rgb(231, 231, 33),
+        rgb(20, 95, 20),
+        rgb(100, 28, 100) );
+}
+
+.header7{
+    background-image: repeating-radial-gradient(
+        yellow,
+        green 15%,
+        blue 20%
+    );
+    /** yüzde verilmediginde renkleri birer kere kullaniyor */
+}
+
+.header8{
+    background-image: linear-gradient(
+        to right, 
+        #7622da 11%, 
+        #47c6eb 11%, 
+        #47c6eb 29%, 
+        #ed5f1f 29%, 
+        #ed5f1f 60%, 
+        #f59f28 60%, 
+        #f59f28 75%, 
+        #6b1e5b 75%, 88%, 
+        #45b794 88%, 
+        #45b794 100%);
+    
+    /** 0-11= #7622da. 11-29=#47c6eb. 29-60=#ed5f1f. 60-75=#f59f28. 75-88=#6b1e5b. 88-100=#45b794 */
+}
+    
+    
