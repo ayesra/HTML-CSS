@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--* CARD-image-overlays (bu isimli karti aldim) -->
+
+    <!--* d-flex le yanyana getirdik sonra column yazdik yapisini bozduk tekrar alt alta geldi**amaa yapisi bpzuldugu icin artik tersine döndü**yaani justify dikeyde-- align-items yatayda hareket ettirmeye basliyor(normalde tam tersiydi) -->
+    <!--! d-flex ile flex-column kullanırsak (elementleri alt alta column haline getirirsek), jusify dikeyde hizalar, align yatayda hizalar -->
+
+    <div class="card text-bg-dark">
+      <img src="./img/happy-team.jpg" class="card-img" alt="resim" />
+      <div
+        class="card-img-overlay d-flex flex-column justify-content-between align-items-center"
+      >
+        <h5 class="card-title">Happy Team</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
+        <p class="card-text text-danger">
+          <small>Last updated 3 mins ago</small>
+        </p>
+      </div>
+    </div>
+
+    <!--! CARD-Example -->
+    <div class="container mt-4">
+      <div class="row bg-warning d-flex justify-content-center g-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 bg-danger">
+          <div class="card mx-auto" style="width: 18rem">
+            <img src="./img/avatar1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 bg-danger">
+          <div class="card mx-auto" style="width: 18rem">
+            <img src="./img/avatar2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 bg-danger">
+          <div class="card mx-auto" style="width: 18rem">
+            <img src="./img/avatar3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
