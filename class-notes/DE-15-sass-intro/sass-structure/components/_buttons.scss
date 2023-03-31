@@ -1,0 +1,15 @@
+.button-error {
+    @extend .button;
+    background-color: red;
+}
+
+.button-success {
+    @extend .button;
+    background-color: blue;
+}
+
+.button-warning {
+    @extend .button;
+    background-color: orange;
+}
+
